@@ -17,8 +17,8 @@
 package main
 
 import (
-	"github.com/pulumi/pulumi-xyz/pkg/provider"
-	"github.com/pulumi/pulumi-xyz/pkg/version"
+	"github.com/mlin-aviatrix/pulumi-transit-gateway-aviatrix/pkg/provider"
+	"github.com/mlin-aviatrix/pulumi-transit-gateway-aviatrix/pkg/version"
 )
 
 var providerName = "aviatrix"
