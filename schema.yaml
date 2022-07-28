@@ -1,30 +1,41 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/pulumi/pulumi/master/pkg/codegen/schema/pulumi.json
 ---
-name: xyz
+name: aviatrix
 resources:
-  xyz:index:StaticPage:
+  aviatrix:index:TransitModule:
     isComponent: true
     inputProperties:
-      indexContent:
+      accountName:
         type: string
-        description: The HTML content for index.html.
+        description: Access account name.
+      cloudType:
+        type: integer
+        description: Cloud type.
+      region:
+        type: string
+        description: Name of region.
+      gatewayName:
+        type: string
+        description: Name of gateway to be created.
+      gatewaySize:
+        type: string
+        description: Size of gateway to be created.
     requiredInputs:
-      - indexContent
+      - accountName
+      - cloudType
+      - region
+      - gatewayName
+      - gatewaySize
     properties:
-      bucket:
-        "$ref": "/aws/v4.0.0/schema.json#/resources/aws:s3%2Fbucket:Bucket"
-        description: The bucket resource.
-      websiteUrl:
+      gatewayName:
         type: string
-        description: The website URL.
+        description: Name of gateway created.
     required:
-      - bucket
-      - websiteUrl
+      - gatewayName
 language:
   csharp:
     packageReferences:
       Pulumi: 3.*
-      Pulumi.Aws: 4.*
   go:
     generateResourceContainerTypes: true
     importBasePath: github.com/pulumi/pulumi-xyz/sdk/go/xyz

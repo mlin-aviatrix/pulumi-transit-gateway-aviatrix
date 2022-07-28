@@ -4,8 +4,8 @@ go 1.17
 
 require (
 	github.com/ghodss/yaml v1.0.0
+	github.com/mlin-aviatrix/pulumi-aviatrix/sdk v0.0.0-20220512213643-e1f3a8e51703
 	github.com/pkg/errors v0.9.1
-	github.com/pulumi/pulumi-aws/sdk/v4 v4.0.0
 	github.com/pulumi/pulumi/pkg/v3 v3.30.0
 	github.com/pulumi/pulumi/sdk/v3 v3.30.0
 )
@@ -74,7 +74,7 @@ require (
 	github.com/kevinburke/ssh_config v0.0.0-20190725054713-01f96b0aa0cd // indirect
 	github.com/mattn/go-colorable v0.1.6 // indirect
 	github.com/mattn/go-ieproxy v0.0.1 // indirect
-	github.com/mattn/go-isatty v0.0.12 // indirect
+	github.com/mattn/go-isatty v0.0.14 // indirect
 	github.com/mattn/go-runewidth v0.0.8 // indirect
 	github.com/mgutz/ansi v0.0.0-20170206155736-9520e82c474b // indirect
 	github.com/mitchellh/copystructure v1.0.0 // indirect
@@ -142,3 +142,5 @@ require (
 	gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c // indirect
 	sourcegraph.com/sourcegraph/appdash v0.0.0-20190731080439-ebfcffb1b5c0 // indirect
 )
+
+replace github.com/mlin-aviatrix/pulumi-aviatrix/sdk => /Users/matthewlin/go/src/github.com/pulumi-aviatrix/sdk

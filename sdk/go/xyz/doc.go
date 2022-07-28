@@ -1,3 +1,3 @@
-// Package xyz exports types, functions, subpackages for provisioning xyz resources.
+// Package aviatrix exports types, functions, subpackages for provisioning aviatrix resources.
 //
 package xyz
