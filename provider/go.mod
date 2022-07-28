@@ -1,4 +1,4 @@
-module github.com/pulumi/pulumi-xyz
+module github.com/mlin-aviatrix/pulumi-transit-gateway-aviatrix
 
 go 1.17
 
