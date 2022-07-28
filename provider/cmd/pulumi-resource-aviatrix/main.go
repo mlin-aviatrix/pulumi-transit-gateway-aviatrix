@@ -21,7 +21,7 @@ import (
 	"github.com/pulumi/pulumi-xyz/pkg/version"
 )
 
-var providerName = "xyz"
+var providerName = "aviatrix"
 
 func main() {
 	provider.Serve(providerName, version.Version, pulumiSchema)

@@ -38,7 +38,7 @@ language:
       Pulumi: 3.*
   go:
     generateResourceContainerTypes: true
-    importBasePath: github.com/pulumi/pulumi-xyz/sdk/go/xyz
+    importBasePath: github.com/pulumi/pulumi-aviatrix/sdk/go/aviatrix
   nodejs:
     dependencies:
       "@pulumi/aws": "^4.0.0"
